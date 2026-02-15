@@ -82,3 +82,49 @@ button:hover {
     background: #f8d7da;
     color: #721c24;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+tbody tr:hover {
+    background: #eee;
+}
+
+input[type="text"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+#word-actions {
+    display: flex;
+    gap: 8px;
+}
