@@ -37,6 +37,15 @@ Create a git repository in the root. Create a proper README.md in the root. Make
 Provide for the loading of environment variables by the Python app.
 
 
-
+Let the word details be editable through the usual means. Make a button to edit the word
+  details. Pressing it will enter edit mode. The edit button disappears and is replaced by a
+  save button and a cancel button. The displayed details become a form where the word and the
+  pos are editable fields, filled with the current values as initial values. The save button
+  is disabled and becomes enabled only when the editable values differ from the current
+  values. Pressing the save button sends an update to the backend api route PUT /api/word
+  where the JSON contains the id and the values to update. The backend will update the
+  corresponding entry and send a success message or an error message. If successful, a
+  transient success message is display. Likewis an error will result in a displayed error
+  message. Cancel exits edit mode and returns to normal mode.
 
 

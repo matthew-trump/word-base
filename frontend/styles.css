@@ -34,6 +34,57 @@ nav .nav-brand {
     font-weight: 600;
     font-size: 18px;
     margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo {
+    height: 32px;
+    width: auto;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-toggle {
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-dropdown-toggle:hover {
+    color: #fff;
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a1a2e;
+    border-radius: 0 0 6px 6px;
+    min-width: 140px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-dropdown-menu a:hover {
+    background: #16213e;
+    color: #fff;
 }
 
 main {
@@ -103,7 +154,8 @@ tbody tr:hover {
     background: #eee;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
     padding: 6px 10px;
     font-size: 14px;
     border: 1px solid #ccc;

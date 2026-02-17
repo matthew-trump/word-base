@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Alpha</title>
+    <title>Word Base</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <nav>
-        <a href="/" class="nav-brand" data-link>User Alpha</a>
+        <a href="/" class="nav-brand" data-link><img src="/wordbase_logo.png" alt="Word Base" class="nav-logo">Word Base</a>
         <a href="/test" data-link>Test</a>
         <a href="/words" data-link>Words</a>
+        <a href="/languages" data-link>Languages</a>
+        <div class="nav-dropdown">
+            <span class="nav-dropdown-toggle">Add New</span>
+            <div class="nav-dropdown-menu">
+                <a href="/add-word" data-link>Word</a>
+                <a href="/add-language" data-link>Language</a>
+            </div>
+        </div>
     </nav>
     <main id="app"></main>
     <script src="/app.js"></script>
