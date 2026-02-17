@@ -1,4 +1,4 @@
-# User Alpha
+# Word Base
 
 Full-stack scaffolding for secure user logins and sessions in web apps.
 

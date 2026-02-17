@@ -48,4 +48,6 @@ Let the word details be editable through the usual means. Make a button to edit 
   transient success message is display. Likewis an error will result in a displayed error
   message. Cancel exits edit mode and returns to normal mode.
 
+Make a front end route to add a new word. It be its own page. Make a link to this page in the top navigation. The new word form should have text fields for word and pos. The save button should be disabled unless both fields are filled. A reset button should clear the form fields (and disable the save button). The action of the save button should be to send the JSON of the new word to POST /api/word. The backend route should check that both required fields were sent. If not, an error should be returned for a bad request. If successfully inserted into the database, return a success message with the id of the inserted word. A transient success message should be displayed. A returned error should display the error message. 
+
 
